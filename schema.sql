@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS public.animals
     date_of_birth date,
     escape_attempts integer,
     neutered boolean,
-    weigth_kg DECIMAL,
+    weight_kg numeric,
+    species character varying COLLATE pg_catalog."default",
     CONSTRAINT vet_clinic_pkey PRIMARY KEY (id)
 )
 
